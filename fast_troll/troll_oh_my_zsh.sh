@@ -16,8 +16,8 @@ then
 	cp ~/.oh-my-zsh/custom/alias.zsh ~/.oh-my-zsh/custom/.aliassave
 fi
 touch ~/.oh-my-zsh/custom/alias.zsh
-echo "alias ls='(pactl set-sink-mute 0 1 && pactl set-sink-mute 0 0 && pactl set-sink-volume 0 75% && paplay ~/.tuturu_1.wav &) ; ls -G $1'" >> ~/.oh-my-zsh/custom/alias.zsh
-curl https://raw.githubusercontent.com/clinche/Troll_42/master/sound/tuturu_1.wav -o ~/.tuturu_1.wav
+echo "alias ls='(pactl set-sink-mute 0 1 && pactl set-sink-mute 0 0 && pactl set-sink-volume 0 75% && paplay ~/.sncf-france-jingle.ogg &) ; ls -G \$1'" >> ~/.oh-my-zsh/custom/alias.zsh
+curl https://raw.githubusercontent.com/clinche/Troll_42/master/sound/sncf-france-jingle.ogg -o ~/.sncf-france-jingle.ogg
 clear
 history -c
 exec zsh
